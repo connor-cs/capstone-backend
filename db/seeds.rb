@@ -10,7 +10,7 @@ STATES = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 
 #create state instances here
 
 STATE.each do |state|
-    
+    State.create(name: "#{state}")
 end
 
 STATES.each do |state|

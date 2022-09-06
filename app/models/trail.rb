@@ -1,6 +1,3 @@
 class Trail < ApplicationRecord
-
-    def initialize
-    end
-     
+    belongs_to :state
 end

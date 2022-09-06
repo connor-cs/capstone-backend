@@ -9,6 +9,10 @@ STATES = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 
 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington','West Virginia', 'Wisconsin', 'Wyoming']
 #create state instances here
 
+STATE.each do |state|
+    
+end
+
 STATES.each do |state|
     url = URI("https://trailapi-trailapi.p.rapidapi.com/activity/?limit=25&q-state_cont=#{state}&q-activities_activity_type_name_eq=hiking")
     http = Net::HTTP.new(url.host, url.port)
